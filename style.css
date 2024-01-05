@@ -51,7 +51,7 @@ html {
 
 /* HOME =================== */
 #home {
-  background-image: url(./assets/fundo\ mobile.jpg);
+  background-image: url(./assets/Background\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 33%;
@@ -65,6 +65,7 @@ html {
     justify-content: center;
     align-items: center;
   }
+
   .banner video {
     position: fixed;
     top: 0;
@@ -86,7 +87,7 @@ html {
   }
 
   .banner .right img {
-    width: 50rem;
+    width: 80%;
   }
 
   .banner .left {
@@ -101,7 +102,7 @@ html {
   .banner .left h1 {
     margin: 0;
     padding: 0;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 300;
     
     color: var(--color-text);
@@ -250,12 +251,22 @@ html {
   transform: scale(1.1);
 }
 
+@media (min-width: 768px) {
+  header#home .banner .left h1 {
+    font-size: 4rem;
+  }
+}
+
 @media (min-width: 1300px) {
    header#home {
       background-image: none;
       background-repeat: initial;
       background-size: initial;
       background-position: initial;
+  }
+
+  header#home .banner .left h1 {
+    font-size: 5rem;
   }
 
   section#services .cards {
