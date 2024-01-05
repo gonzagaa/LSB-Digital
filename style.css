@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --primary-color: #95F108;
+    --secondy-color: #B1E200;
+    --tertinary-color: #D0ED65;
+    --paragraphy-color: #161A1D;
+
+    --nav-height: 7.2rem;
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  .wrapper-home {
+    width: min(130rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+  
+  section {
+    padding-block: 10rem;
+  }
+
+/* HOME =================== */
+#home {
+  background-image: url(./assets/fundo\ mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 33%;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+
+    filter: brightness(.5);
+  }
+
+  .banner .content {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .right img {
+    width: 50rem;
+  }
+
+  .banner .left {
+    position: relative;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .banner .left h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+    font-weight: 300;
+    
+    color: var(--color-text);
+
+    text-shadow: 8px 15px 15px rgba(10, 10, 10, 0.121), 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+  .banner .left h1 span {
+    font-weight: 700;
+
+    text-shadow: 8px 15px 15px rgba(173, 198, 13, 0.091), 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+  .banner .left button a {
+    text-decoration: none;
+    color: white;
+    transition: all 300ms ease-in-out;
+  }
+
+  .banner .left button:hover a {
+    color: var(--secondary-color);
+    font-weight: 700;
+  }
+
+  .banner .left button {
+    background-color: transparent;
+    border: none;
+    outline: 2px solid var(--color-text);
+    padding: 1rem 1.7rem;
+    width: 30%;
+
+    border-radius: 2rem;
+    
+    box-shadow: 0px 8px 18px -3px rgba(0, 0, 0, 0.25);
+
+    transition: all 300ms ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: var(--color-text);
+    color: var(--secondary-color);
+  }
+
+  #home .arrow svg {
+    transition: all 200ms ease-in-out;
+  }
+  
+  #home .arrow:hover svg {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .custom-shape-divider-bottom-1698431678 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698431678 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-bottom-1698431678 .shape-fill {
+    fill: #dfdfdf;
+  }
+
+/* services =================== */
+#services {
+  background-color: #292929;
+  background-image: url(./assets/Disk-2s-2560px.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .cards .card img {
+  background: #95f108;
+  box-shadow:  9px 9px 30px #2e4d019d,
+              -9px -9px 30px #a1ff097a;
+  padding: 2rem;
+  border-radius: 17% 83% 52% 48% / 74% 31% 69% 26% ;
+
+  width: 10rem;
+
+  animation: moviment 1.5s infinite ease-in-out;
+}
+
+#services .cards .card h3 {
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+
+  font-size: 2.5rem;
+}
+
+#services .cards p {
+  color: #dfdfdf;
+  font-weight: 400;
+}
+
+
+
+/* buttonWhatsapp =================== */
+#buttonWhatsapp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: all 300ms ease-in-out;
+}
+
+#buttonWhatsapp.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+#buttonWhatsapp img {
+  width: 6rem;
+  transition: all 300ms ease-in-out;
+}
+
+#buttonWhatsapp svg:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1300px) {
+   header#home {
+      background-image: none;
+      background-repeat: initial;
+      background-size: initial;
+      background-position: initial;
+  }
+
+  section#services .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10rem;
+  }
+}
+
+@keyframes moviment {
+  50% {
+    transform: translateY(-7px) translateX(-2px);
+  }
+}
+
+ 
