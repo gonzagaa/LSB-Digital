@@ -149,6 +149,9 @@ html {
 
   #home .arrow svg {
     transition: all 200ms ease-in-out;
+
+    animation: moviment 1.5s infinite ease-in-out;
+
   }
   
   #home .arrow:hover svg {
@@ -156,7 +159,7 @@ html {
     cursor: pointer;
   }
 
-  .custom-shape-divider-bottom-1698431678 {
+  .custom-shape-divider-bottom-1704479639 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -166,23 +169,21 @@ html {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1698431678 svg {
+.custom-shape-divider-bottom-1704479639 svg {
     position: relative;
     display: block;
-    width: calc(119% + 1.3px);
-    height: 73px;
+    width: calc(100% + 1.3px);
+    height: 79px;
 }
 
-.custom-shape-divider-bottom-1698431678 .shape-fill {
-    fill: #dfdfdf;
-  }
+.custom-shape-divider-bottom-1704479639 .shape-fill {
+    fill: #111111;
+}
 
 /* services =================== */
 #services {
-  background-color: #292929;
-  background-image: url(./assets/Disk-2s-2560px.svg);
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #111111;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23282828' fill-opacity='.1' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
 }
 
 #services .cards {
@@ -219,7 +220,35 @@ html {
   font-weight: 400;
 }
 
+/* more =================== */
+#more {
+  background-color: #7BFF3C;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2395F108'/%3E%3Cstop offset='1' stop-color='%237BFF3C'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23323232' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23323232' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.09'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
 
+#more .content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#more .content span {
+  color: var(--paragraphy-color);
+}
+
+#more .content h2 {
+  color: var(--color-text);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+#more .content h2 span {
+  color: var(--color-text);
+  font-weight: 800;
+}
 
 /* buttonWhatsapp =================== */
 #buttonWhatsapp {
