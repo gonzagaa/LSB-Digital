@@ -292,14 +292,21 @@ nav {
 
       nav#navigation .menu ul li a:hover {
         color: var(--primary-color);
+        opacity: 1;
+      }
+
+      nav#navigation .menu a {
+        color: #111111;
       }
 
       nav#navigation .menu a button {
-        color: var(--color-text);
-        outline: 2px solid var(--color-text);
-        padding: 1rem 2rem;
+        color: #111111;
+        
+        background-color: var(--primary-color);
 
-        border-radius: 3rem;
+        padding: 0 2rem;
+        border-radius: 2rem 0;
+        height: var(--nav-height);
 
         transition: all 300ms ease-in-out;
         font-weight: 700;
@@ -309,12 +316,17 @@ nav {
       }
   
       nav#navigation .menu a button:hover {
-        color: var(--primary-color);
+        color: #000;
         outline: 2px solid var(--primary-color);
         font-weight: 700;
 
-        box-shadow:  17px 17px 50px #94f10886,
-             -17px -17px 50px #9ae92375;
+        border-radius: 0 2rem;
+        box-shadow:  17px 17px 50px #94f1084d,
+             -17px -17px 50px #9ae9234a;
+      }
+
+      nav#navigation.scroll .menu a button {
+        background-color: #94f108c8;
       }
 
       nav#navigation .menu ul li:nth-child(6) {
