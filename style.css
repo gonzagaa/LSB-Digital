@@ -51,14 +51,13 @@ html {
 
 /* HOME =================== */
 #home {
-  background-image: url(./assets/background\ mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 33%;
 }
 
 #home .banner video {
-  display: none;
+  display: initial;
 }
 
 .banner {
