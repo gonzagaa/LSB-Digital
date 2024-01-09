@@ -8,6 +8,7 @@
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +33,7 @@
 
                 <ul>
                     <li><a onclick="closeMenu()" href="#home">HOME</a></li>
-                    <li><a onclick="closeMenu()" href="">SERVICOS</a></li>
+                    <li><a onclick="closeMenu()" href="">SERVIÇOS</a></li>
                     <li><a onclick="closeMenu()" href="">NOSSO TIME</a></li>
                 </ul>
 
@@ -118,15 +119,15 @@
 
                 <div class="content">
                     <div class="left">
-                        <h1>Criamos <span>estratégias</span> que alavancam sua <span>visibilidade</span></h1>
+                        <img src="./assets/logo LSB DIGITAL simples.png" alt="">
                     </div>
     
                     <div class="right">
-                        <img src="./assets/logo LSB DIGITAL.png" alt="">
+                        <h1>Criamos <span>estratégias</span> que alavancam sua <span>visibilidade</span></h1>
                     </div>
 
                     <a class="arrow" href="#services">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#95F108" viewBox="0 0 256 256"><path d="M213.66,122.34a8,8,0,0,1,0,11.32l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,196.69l74.34-74.35A8,8,0,0,1,213.66,122.34Zm-91.32,11.32a8,8,0,0,0,11.32,0l80-80a8,8,0,0,0-11.32-11.32L128,116.69,53.66,42.34A8,8,0,0,0,42.34,53.66Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#fff" viewBox="0 0 256 256"><path d="M213.66,122.34a8,8,0,0,1,0,11.32l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,196.69l74.34-74.35A8,8,0,0,1,213.66,122.34Zm-91.32,11.32a8,8,0,0,0,11.32,0l80-80a8,8,0,0,0-11.32-11.32L128,116.69,53.66,42.34A8,8,0,0,0,42.34,53.66Z"></path></svg>
                     </a>
                 </div>
             </div>
@@ -141,38 +142,42 @@
 
     <section id="services">
         <div class="wrapper">
+            <header>
+                <span>CONHEÇA NOSSOS</span>
+                <h2>SERVIÇOS</h2>
+            </header>
             <div class="cards">
-                <div class="card">
+                <div class="card left">
                     <img src="./assets/icones/lightbulb-filament.svg" alt="">
                     <h3>SEO</h3>
                     <p>ESTRATÉGIAS PARA ALCANÇAR O TOPO NAS BUSCAS</p>
                 </div>
 
-                <div class="card">
+                <div class="card right">
                     <img src="./assets/icones/gear.svg" alt="">
                     <h3>Gerenciamento</h3>
                     <p>GERENCIAMOS SUAS REDES SOCIAIS PARA ALCANÇAR O SUCESSO</p>
                 </div>
 
-                <div class="card">
+                <div class="card left">
                     <img src="./assets/icones/trend-up.svg" alt="">
                     <h3>Tráfego Pago</h3>
                     <p>INVISTA EM ANÚNCIOS, ANUNCIE PARA TODA INTERNET</p>
                 </div>
 
-                <div class="card">
+                <div class="card right">
                     <img src="./assets/icones/newspaper.svg" alt="">
                     <h3>Landing Page</h3>
                     <p>PÁGINAS PROFISSIONAIS QUE VÃO GERAR CONVERSÕES PARA O SEU NEGOCIO</p>
                 </div>
 
-                <div class="card">
+                <div class="card left">
                     <img src="./assets/icones/newspaper-clipping.svg" alt="">
                     <h3>Site Institucional</h3>
                     <p>SITES PROFISSIONAIS CRIADOS COM O INTUITO DE IMPULSIONAR SUA EMPRESA</p>
                 </div>
 
-                <div class="card">
+                <div class="card right">
                     <img src="./assets/icones/shopping-cart.svg" alt="">
                     <h3>E-Commerce</h3>
                     <p>VAMOS EXPANDIR SEU PROJETO PARA O MUNDO DIGITAL</p>
@@ -231,54 +236,115 @@
             <div class="timeline">
                 <div class="container left-container">
                     <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
-                        <img src="./assets/nosso time/matheus aquino.jpg" alt="">
-                        <h3>Matheus Aquino</h3>
-                        <span>DIRETOR</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
+
+                        <div class="content">
+                            <img src="./assets/nosso time/matheus aquino.jpg" alt="">
+                            <h3>Matheus Aquino</h3>
+                            <span>DIRETOR</span>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="container right-container">
                     <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
 
-                        <img src="./assets/nosso time/william marques.jpg" alt="">
-                        <h3>William Marques</h3>
-                        <span>PROJECT MANAGER</span>
+                        <div class="content">
+                            <img src="./assets/nosso time/william marques.jpg" alt="">
+                            <h3>William Marques</h3>
+                            <span>PROJECT MANAGER</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="container left-container">
                     <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
 
-                        <img src="./assets/nosso time/luca naves.jpg" alt="">
-                        <h3>Luca Naves</h3>
-                        <span>DIRETOR COMERCIAL</span>
+                        <div class="content">
+                            <img src="./assets/nosso time/luca naves.jpg" alt="">
+                            <h3>Luca Naves</h3>
+                            <span>DIRETOR COMERCIAL</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="container right-container">
                     <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
 
-                        <img src="./assets/nosso time/mike.jpg" alt="">
-                        <h3>Mike</h3>
-                        <span>DIRETOR DE DESIGN</span>
+                        <div class="content">
+                            <img src="./assets/nosso time/mike.jpg" alt="">
+                            <h3>Mike</h3>
+                            <span>DIRETOR DE DESIGN</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="container left-container">
                     <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M232,128A104,104,0,1,1,128,24,104.13,104.13,0,0,1,232,128Z"></path></svg>
 
-                        <img src="./assets/nosso time/rafael reis.jpg" alt="">
-                        <h3>Rafael Reis</h3>
-                        <span>Gestor de Tráfego</span>
+                        <div class="content">
+                            <img src="./assets/nosso time/rafael reis.jpg" alt="">
+                            <h3>Rafael Reis</h3>
+                            <span>GESTOR DE TRÁFEGO</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div> 
+    </section>
+
+    <section id="time-mobile">
+        <div class="wrapper">
+            <h2>NOSSO TIME</h2>
+            <span>Conheça nossa equipe, aqueles que têm paixão por trabalhar e deixar nossos clientes mais confortáveis e felizes.</span>     
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/matheus aquino.jpg" />
+                    <div class="content">
+                        <h3>Matheus Aquino</h3>
+                        <span>DIRETOR</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/william marques.jpg" />
+                    <div class="content">
+                        <h3>William Marques</h3>
+                        <span>DIRETOR</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/luca naves.jpg" />
+                    <div class="content">
+                        <h3>Luca Naves</h3>
+                        <span>DIRETOR</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/mike.jpg" />
+                    <div class="content">
+                        <h3>Mike</h3>
+                        <span>DIRETOR</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/rafael reis.jpg" />
+                    <div class="content">
+                        <h3>Rafael Reis</h3>
+                        <span>DIRETOR</span>
+                    </div>
+                  </div>
+                </div>
+
+                    <svg class="swiper-button-prev" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+
+                    <svg class="swiper-button-next" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+        </div>
     </section>
 
     <footer id="footer">
@@ -311,6 +377,7 @@
 
     </a>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html> 

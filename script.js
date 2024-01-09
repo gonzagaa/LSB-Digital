@@ -31,6 +31,13 @@ function closeMenu() {
 }
 
 ScrollReveal().reveal('#home h1', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home img, #services .card, #more h3, #more h2, #more a, #time h2, #time span', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
+
+ScrollReveal().reveal('#services .left', { distance: '400px', origin: 'left', desktop: false ,duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#services .right', { distance: '400px', origin: 'right', desktop: false ,duration: 500, easing: 'ease-in-out'});
+
+ScrollReveal().reveal('#time .left-container .content', { distance: '400px', origin: 'left',duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#time .right-container .content', { distance: '400px', origin: 'right',duration: 500, easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#services .header', { distance: '200px', origin: 'left', duration: 500, easing: 'ease-in-out'});
 
@@ -43,4 +50,26 @@ ScrollReveal().reveal(
 { distance: '200px', origin: 'bottom', duration: 500 ,easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#values .card', { distance: '200px', scale: 0.5, opacity: 0.5 ,duration: 700, easing: 'ease-in-out'});
+
+var swiper = new Swiper(".mySwiper", {
+    grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-125%", 0, -800],
+          rotate: [0, 0, -90],
+        },
+        next: {
+          shadow: true,
+          translate: ["125%", 0, -800],
+          rotate: [0, 0, 90],
+        },
+      },
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  });
 
