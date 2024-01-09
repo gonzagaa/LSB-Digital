@@ -51,7 +51,7 @@ ScrollReveal().reveal(
 
 ScrollReveal().reveal('#values .card', { distance: '200px', scale: 0.5, opacity: 0.5 ,duration: 700, easing: 'ease-in-out'});
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper2", {
     grabCursor: true,
       effect: "creative",
       creativeEffect: {
@@ -73,3 +73,14 @@ var swiper = new Swiper(".mySwiper", {
       },
   });
 
+  var swiper = new Swiper(".mySwiper", {
+    effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
