@@ -239,8 +239,6 @@ align-items: center;
   padding: 2rem;
   border-radius: 17% 83% 52% 48% / 74% 31% 69% 26% ;
 
-  width: 10rem;
-
   animation: moviment 1.5s infinite ease-in-out;
 }
 
@@ -250,7 +248,7 @@ align-items: center;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 
   background: #86D907;
 background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
@@ -259,6 +257,7 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 }
 
 #services .cards p {
+  font-size: 1.4rem;
   color: #dfdfdf;
   font-weight: 400;
 
@@ -665,6 +664,14 @@ background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10rem;
+  }
+
+  section#services .cards .card h3 {
+    font-size: 2.5rem;
+  }
+
+  section#services .cards .card p {
+    font-size: 1.6rem;
   }
 
   section#services .line {
