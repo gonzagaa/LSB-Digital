@@ -51,17 +51,15 @@ ScrollReveal().reveal(
 
 ScrollReveal().reveal('#values .card', { distance: '200px', scale: 0.5, opacity: 0.5 ,duration: 700, easing: 'ease-in-out'});
 
-var swiper = new Swiper(".mySwiper2", {
+var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
       effect: "creative",
       creativeEffect: {
         prev: {
-          shadow: true,
           translate: ["-125%", 0, -800],
           rotate: [0, 0, -90],
         },
         next: {
-          shadow: true,
           translate: ["125%", 0, -800],
           rotate: [0, 0, 90],
         },
@@ -73,14 +71,17 @@ var swiper = new Swiper(".mySwiper2", {
       },
   });
 
-  var swiper = new Swiper(".mySwiper", {
-    effect: "flip",
-      grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
+  var swiper = new Swiper(".mySwiperDesktop", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+    keyboard: true,
+  });
