@@ -30,8 +30,8 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
-ScrollReveal().reveal('#home h1', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
-ScrollReveal().reveal('#home img, #services .card, #more h3, #more h2, #more a, #time h2, #time span', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home h1, #clientes .logos, #footer .foot', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home img, #services .card, #more h3, #more h2, #more a, #time h2, #time span, #time h2, #time span, #time-mobile h2, #time-mobile span, #contact header, #contact input, #contact form', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#services .left', { distance: '400px', origin: 'left', desktop: false ,duration: 500, easing: 'ease-in-out'});
 ScrollReveal().reveal('#services .right', { distance: '400px', origin: 'right', desktop: false ,duration: 500, easing: 'ease-in-out'});
@@ -44,12 +44,6 @@ ScrollReveal().reveal('#services .header', { distance: '200px', origin: 'left', 
 ScrollReveal().reveal('#services .first', { distance: '200px', origin: 'right', duration: 500, easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#services .second', { distance: '200px', origin: 'right', duration: 500, delay: 300 ,easing: 'ease-in-out'});
-
-ScrollReveal().reveal(
-    '#values .vision, #values .mission, #values .value h2, #localizations header, #localizations .local',
-{ distance: '200px', origin: 'bottom', duration: 500 ,easing: 'ease-in-out'});
-
-ScrollReveal().reveal('#values .card', { distance: '200px', scale: 0.5, opacity: 0.5 ,duration: 700, easing: 'ease-in-out'});
 
 var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
