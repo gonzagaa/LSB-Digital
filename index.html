@@ -33,11 +33,11 @@
 
                 <ul>
                     <li><a onclick="closeMenu()" href="#home">HOME</a></li>
-                    <li><a onclick="closeMenu()" href="">SERVIÇOS</a></li>
-                    <li><a onclick="closeMenu()" href="">NOSSO TIME</a></li>
+                    <li><a onclick="closeMenu()" href="#services">SERVIÇOS</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">NOSSOS CLIENTES</a></li>
                 </ul>
 
-                <a class="button" href="#"><button>
+                <a class="button" href="#contact"><button>
                     Contato
                 </button></a>
  
@@ -280,35 +280,35 @@
                     <img src="./assets/nosso time/matheus aquino.jpg" />
                     <div class="content">
                         <h3>Matheus Aquino</h3>
-                        <span>DIRETOR</span>
+                        <p>DIRETOR</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <img src="./assets/nosso time/william marques.jpg" />
                     <div class="content">
                         <h3>William Marques</h3>
-                        <span>PROJECT MANAGER</span>
+                        <p>PROJECT MANAGER</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <img src="./assets/nosso time/luca.jpg" />
                     <div class="content">
                         <h3>Luca Naves</h3>
-                        <span>DIRETOR COMERCIAL</span>
+                        <p>DIRETOR COMERCIAL</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <img src="./assets/nosso time/mike.jpg" />
                     <div class="content">
                         <h3>Mike</h3>
-                        <span>DIRETOR DE DESIGN</span>
+                        <p>DIRETOR DE DESIGN</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <img src="./assets/nosso time/rafael reis.jpg" />
                     <div class="content">
                         <h3>Rafael Reis</h3>
-                        <span>GESTOR DE TRÁFEGO</span>
+                        <p>GESTOR DE TRÁFEGO</p>
                     </div>
                   </div>
 
@@ -316,7 +316,7 @@
                     <img src="./assets/nosso time/gustavogonzaga.jpg" />
                     <div class="content">
                         <h3>Gustavo Gonzaga</h3>
-                        <span>DESENVOLVEDOR</span>
+                        <p>DESENVOLVEDOR</p>
                     </div>
                   </div>
                 </div>
@@ -385,6 +385,35 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="wrapper">
+            <header>
+                <h2>Entre em contato</h2>
+                <p>Preencha o formulário para falar com nosso time</p>
+            </header>
+
+            <form action="https://formsubmit.co/lsbagenciadigital@gmail.com" 
+            method="POST">
+                <input type="hidden" name="_next" value="https://www.instagram.com/lsbdigital/"/>
+                <input type="hidden" name="_autoresponse" value="Obrigado! Recebemos sua mensagem."/>
+
+                <label for="name">Nome</label>
+                <input name="name" type="text" required class="feedback-input"/>   
+
+                <label for="email">Email</label>
+                <input name="email" type="email" required class="feedback-input"/>
+
+                <label for="textarea">Deixe sua mensagem</label>
+                <textarea name="text" class="feedback-input"></textarea>
+
+                <div class="input">
+                    <button type="submit">ENVIAR</button>
+                </div>
+                
+              </form>
+        </div>
+    </section>
+
     <footer id="footer">
         <div class="wrapper">
 
@@ -406,6 +435,10 @@
                     <p>Brookfield Towers Av. Dep. Jamel Cecílio, R. 56 - Sala - 815A - Jardim Goiás, Goiânia - GO</p>
                 </div>
             </div>
+        </div>
+
+        <div class="foot">
+            <p>Desenvolvido por <a href="https://www.instagram.com/lsbdigital/">LSB Digital</a></p>
         </div>
     </footer>
 
