@@ -10,7 +10,7 @@
   :root {
     font-size: 62.5%;
 
-    --primary-color: #95F108;
+    --primary-color: #71f108;
     --secondy-color: #B1E200;
     --tertinary-color: #D0ED65;
     --paragraphy-color: #161A1D;
@@ -179,6 +179,14 @@ nav {
     transition: transform 300ms;
     transform: translateX(0);
   }
+
+  .menu ul li:nth-child(3) {
+    display: none;
+  }
+
+  .menu ul li:nth-child(4) {
+    display: none;
+  }
   
   .menu ul:nth-child(1) {
     display: flex;
@@ -228,7 +236,14 @@ nav {
   }
 
   .menu .button:hover {
-    background-color: var(--secondary-color);
+    background-color: transparent;
+    outline: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+
+  .menu .button:hover button {
+    background-color: transparent;
+    color: var(--primary-color);
   }
   
   .social-links {
@@ -277,7 +292,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 60%;
+        width: 63%;
       }
     
       nav#navigation .menu ul:nth-child(1) {

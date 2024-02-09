@@ -9,7 +9,7 @@
 :root {
     font-size: 62.5%;
 
-    --primary-color: #95F108;
+    --primary-color: #71f108;
     --secondy-color: #B1E200;
     --tertinary-color: #D0ED65;
     --paragraphy-color: #161A1D;
@@ -55,7 +55,24 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 90vh;
+  height: 100vh;
+
+  position: relative;
+}
+
+#home img.blur {
+  position: absolute;
+  top: -35rem;
+  right: 0;
+  opacity: .5;
+
+  animation: moveBlur infinite ease-in-out 10s;
+}
+
+@keyframes moveBlur {
+  50% {
+    transform: translateX(60%);
+  }
 }
 
 #home .banner video {
@@ -92,7 +109,7 @@ html {
   }
 
   .banner .left img {
-    width: 80%;
+    width: 60%;
   }
 
   .banner .right {
@@ -120,8 +137,8 @@ html {
 
     text-shadow: 8px 15px 15px rgba(173, 198, 13, 0.055), 0px -5px 35px rgba(255, 255, 255, 0.103);
 
-    background: #95F108;
-  background: linear-gradient(to right, #95F108 65%, #43F10E 86%);
+    background: #9EFF08;
+  background: linear-gradient(to right, #9EFF08 0%, #11F519 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
@@ -197,23 +214,21 @@ html {
 
 /* services =================== */
 #services {
-  background: hsla(0, 0%, 7%, 1);
-
-background: linear-gradient(0deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
-
-background: -moz-linear-gradient(0deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
-
-background: -webkit-linear-gradient(0deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#111111", endColorstr="#080808", GradientType=1 );
-  background-attachment: fixed;
-  background-size: cover;
+  background: #080808;
+  background: linear-gradient(270deg, #0C0C0C, #080808);
 
   position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+#services .line-indicator {
+  position: absolute;
+  top: 0;
 }
 
 #services header span {
@@ -234,8 +249,17 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#111111", en
 
 #services .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7rem;
+  grid-template-columns: 1fr;
+  gap: 8rem;
+  justify-content: center;
+  padding-inline: .5rem;
+}
+
+#services .cards .card {
+  display: grid;
+  grid-template-areas: "A B";
+  gap: 2rem;
+  align-items: center;
   justify-content: center;
 }
 
@@ -244,9 +268,34 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#111111", en
   box-shadow:  9px 9px 30px #2e4d019d,
               -9px -9px 30px #a1ff097a;
   padding: 2rem;
-  border-radius: 17% 83% 52% 48% / 74% 31% 69% 26% ;
+  border-radius: 1rem;
+  line-height: 0;
 
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
+}
+
+#services .cards .card.left .text {
+  text-align: left;
+}
+
+#services .cards .card.right .text {
+  text-align: right;
+}
+
+#services .cards .card.left img {
+  grid-area: A;
+}
+
+#services .cards .card.left .text {
+  grid-area: B;
+}
+
+#services .cards .card.right img {
+  grid-area: B;
+}
+
+#services .cards .card.right .text {
+  grid-area: A;
 }
 
 #services .cards .card h3 {
@@ -256,7 +305,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#111111", en
   margin-top: 1.5rem;
 
   font-size: 1.8rem;
-
   background: #86D907;
 background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 -webkit-background-clip: text;
@@ -265,29 +313,23 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 
 #services .cards p {
   font-size: 1.4rem;
-  color: #dfdfdf;
-  font-weight: 400;
-
+  color: #d8d8d8;
+  font-weight: 300;
   margin-bottom: 3rem;
-}
-
-/* line =================== */
-.line {
-  background-color: #d8d8d8;
-  height: 2px;
-  width: 80%;
-
-  position: absolute;
-  bottom: 0;
-}
-
-.line img {
-  margin-top: -1rem;
 }
 
 /* more =================== */
 #more {
-  background-color: #080808;
+  background: #080808;
+  background: linear-gradient(270deg, #080808, #0C0C0C);
+  position: relative;
+}
+
+#more .blur {
+  position: absolute;
+  left: -30rem;
+  top: 50%;
+  opacity: .1;
 }
 
 #more .content {
@@ -314,15 +356,15 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 #more .content h2 {
   color: #dfdfdf;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
 #more .content h2 span {
   font-weight: 800;
 
-  background: #95F108;
-  background: linear-gradient(to right, #95F108 65%, #43F10E 86%);
+  background: #9EFF08;
+  background: linear-gradient(to right, #9EFF08 0%, #11F519 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -370,8 +412,18 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 /* clientes =================== */
 
 #clientes {
-  background-color: #111111;
+  background: #080808;
+  background: linear-gradient(270deg, #080808, #0C0C0C);
   display: none;
+
+  position: relative;
+}
+
+#clientes img.logoblur {
+  position: absolute;
+  left: -30rem;
+  bottom: -30rem;
+  opacity: .3;
 }
 
 #clientes h2 {
@@ -412,60 +464,60 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 }
 
 #clientes img.r1 {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 0ms;
 
 }
 
 #clientes img.eliar {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 150ms;
 
 }
 
 #clientes img.janyne {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 250ms;
 
 }
 
 #clientes img.boutique {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 350ms;
 
 }
 
 #clientes img.alfa {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 450ms;
 
 }
 
 #clientes img.segenergy {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 550ms;
 
 }
 
 #clientes img.agil {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 650ms;
 }
 
 #clientes img.sergio {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 750ms;
 
 }
 
 #clientes img.bomsucesso {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 850ms;
 
 }
 
 #clientes img.v {
-  animation: moviment 1.5s infinite ease-in-out;
+  animation: moviment 2s infinite ease-in-out;
   animation-delay: 950ms;
 }
 
@@ -473,6 +525,15 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
 
 #clientes-mobile {
   background-color: #d8d8d8;
+}
+
+#clientes-mobile header h2 {
+  color: var(--paragraphy-color);
+  font-size: 4rem;
+  text-shadow: .5px .5px 2px #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
 }
 
 /* time =================== */
@@ -533,10 +594,9 @@ background-size: cover;
 }
 
 #time-mobile img {
-  border-radius: 1rem 5rem;
+  border-radius: 50%;
 
-  box-shadow:  10px 10px 20px #000000,
-             -10px -10px 20px #000000;
+  box-shadow: 5px 5px 10px #000000c7;
 }
 
 #time-mobile .swiper-button-prev,
@@ -554,9 +614,14 @@ background-size: cover;
   margin-bottom: 1rem;
 }
 
+#time-mobile h3 {
+  font-size: 2rem;
+}
+
 #time-mobile span {
   color: #d8d8d8;
   font-weight: 500;
+  text-transform: lowercase;
 }
 
 #time-mobile .swiper {
@@ -583,6 +648,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
   font-size: 4rem;
   font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 #contact .wrapper header p {
@@ -605,7 +671,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 #contact .wrapper form label {
   font-weight: 800;
   background: #95F108;
-  background: linear-gradient(to right, #95F108 65%, #43F10E 86%);
+  background: linear-gradient(to right, #9EFF08 0%, #11F519 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -636,7 +702,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 #contact .wrapper button {
-  background: linear-gradient(to right, #95F108 65%, #43F10E 86%);
+  background: linear-gradient(to right, #9EFF08 0%, #11F519 100%);
   color: #111111;
   font-size: 1.6rem;
   font-weight: 700;
@@ -651,7 +717,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 #contact .wrapper button:hover {
   cursor: pointer;
-  background: linear-gradient(to right, #7bce00 65%, #34db00 86%);
+  background: linear-gradient(to right, #99ff00 65%, #3cff00 86%);
 }
 
 /* footer =================== */
@@ -691,20 +757,20 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 #footer .foot {
-  background: linear-gradient(to bottom, #3b3b3b 65%, #57575775 86%);
+  background: linear-gradient(to bottom, #181818 65%, #31313175 86%);
   padding: 1rem;
   border-radius: 2rem 2rem 0 0;
 }
 
 #footer .foot p {
-  font-size: 1.8rem;
-  color: #111111;
+  font-size: 1.4rem;
+  color: #d8d8d8;
   font-weight: 600;
 }
 
 #footer .foot p a {
   font-weight: 800;
-  color: #000000;
+  color: #d8d8d8;
 }
 
 /* buttonWhatsapp =================== */
@@ -746,6 +812,10 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     height: initial;
   }
 
+  header#home img.blur {
+    display: none;
+  }
+
   header#home .banner .left h1 {
     font-size: 4rem;
   }
@@ -779,10 +849,19 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     display: initial;
   }
 
+  section#more .wrapper .content h2 {
+    font-size: 4rem;
+  }
+
   section#services .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10rem;
+    gap: 10rem;
+    padding-inline: initial;
+  }
+
+  section#services .cards .card img {
+    border-radius: 17% 83% 52% 48% / 74% 31% 69% 26% ;
   }
 
   section#services .cards .card h3 {
@@ -793,8 +872,13 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-size: 1.6rem;
   }
 
-  section#services .line {
-    display: none;
+  section#services .cards .card.right img {
+    grid-area: A;
+  }
+  
+  section#services .cards .card.right .text {
+    grid-area: B;
+    text-align: left;
   }
 
   section#clientes-mobile {
@@ -881,6 +965,16 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   section#contact .wrapper input,
   section#contact .wrapper textarea {
     width: 80%;
+  }
+}
+
+@media (min-width: 2000px) {
+  header#home .banner img {
+    width: 70%;
+  }
+
+  section#services .wrapper .cards .card .text h3 {
+    font-size: 2.5rem;
   }
 }
 

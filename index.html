@@ -32,12 +32,13 @@
             <div class="menu">
 
                 <ul>
-                    <li><a onclick="closeMenu()" href="#home">HOME</a></li>
-                    <li><a onclick="closeMenu()" href="#services">SERVIÇOS</a></li>
-                    <li><a onclick="closeMenu()" href="#clientes">NOSSOS CLIENTES</a></li>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">Clientes</a></li>
+                    <li><a onclick="closeMenu()" href="#time">Time</a></li>
                 </ul>
 
-                <a class="button" href="#contact"><button>
+                <a onclick="closeMenu()" class="button" href="#contact"><button>
                     Contato
                 </button></a>
  
@@ -110,6 +111,7 @@
     </nav>
 
     <header id="home">
+        <img class="blur" src="./assets/Ellipse Blur.png" alt="">
         <div class="wrapper-home">
             <div class="banner">
                 <video autoplay muted loop>
@@ -140,6 +142,7 @@
     </header>
 
     <section id="more">
+        <img class="blur" src="./assets/Ellipse Blur.png" alt="">
         <div class="wrapper">
             <div class="content">
                 <h3>ALCANCE O TOPO, COMECE <span>AGORA!</span></h3>
@@ -158,56 +161,68 @@
     </section>
 
     <section id="services">
+        <img class="line-indicator" src="./assets/line-indicator.3c53ac87 1.svg" alt="">
+
         <div class="wrapper">
             <header>
                 <span>CONHEÇA NOSSOS</span>
                 <h2>SERVIÇOS</h2>
             </header>
+            
             <div class="cards">
                 <div class="card left">
                     <img src="./assets/icones/lightbulb-filament.svg" alt="">
-                    <h3>SEO</h3>
-                    <p>ESTRATÉGIAS PARA ALCANÇAR O TOPO NAS BUSCAS</p>
+                    <div class="text">
+                        <h3>SEO</h3>
+                        <p>Estratégias para alcançar o topo nas buscas.</p>
+                    </div>
                 </div>
 
                 <div class="card right">
                     <img src="./assets/icones/gear.svg" alt="">
-                    <h3>Gerenciamento</h3>
-                    <p>GERENCIAMOS SUAS REDES SOCIAIS PARA ALCANÇAR O SUCESSO</p>
+                    <div class="text">
+                        <h3>Gerenciamento</h3>
+                        <p>Gerenciamos suas redes sociais para alcançar o sucesso.</p>
+                    </div>
                 </div>
 
                 <div class="card left">
                     <img src="./assets/icones/trend-up.svg" alt="">
-                    <h3>Tráfego Pago</h3>
-                    <p>INVISTA EM ANÚNCIOS, ANUNCIE PARA TODA INTERNET</p>
+                    <div class="text">
+                        <h3>Tráfego Pago</h3>
+                        <p>Invista em anúncios, anuncie para toda internet.</p>
+                    </div>
                 </div>
 
                 <div class="card right">
                     <img src="./assets/icones/newspaper.svg" alt="">
-                    <h3>Landing Page</h3>
-                    <p>PÁGINAS PROFISSIONAIS QUE VÃO GERAR CONVERSÕES PARA O SEU NEGOCIO</p>
+                    <div class="text">
+                        <h3>Landing Page</h3>
+                        <p>Páginas profissionais que vão gerar conversões para seu negócio.</p>
+                    </div>
                 </div>
 
                 <div class="card left">
                     <img src="./assets/icones/newspaper-clipping.svg" alt="">
-                    <h3>Site Institucional</h3>
-                    <p>SITES PROFISSIONAIS CRIADOS COM O INTUITO DE IMPULSIONAR SUA EMPRESA</p>
+                    <div class="text">
+                        <h3>Site Institucional</h3>
+                        <p>Sites profissionais criados com o intuito de impulsionar a sua empresa.</p>
+                    </div>
                 </div>
 
                 <div class="card right">
                     <img src="./assets/icones/shopping-cart.svg" alt="">
-                    <h3>E-Commerce</h3>
-                    <p>VAMOS EXPANDIR SEU PROJETO PARA O MUNDO DIGITAL</p>
+                    <div class="text">
+                        <h3>E-Commerce</h3>
+                        <p>Vamos expandir seu projeto para o mundo digital.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="line">
-            <img src="./assets/logo LSB Digital pequena.png" alt="">
         </div>
     </section>
 
     <section id="clientes">
+        <img class="logoblur" src="./assets/LOGO BLUR.png" alt="">
         <div class="wrapper">
 
             <h2>Nossos clientes</h2>
@@ -230,6 +245,9 @@
 
     <section id="clientes-mobile">
         <div class="wrapper">
+            <header>
+                <h2>Nossos clientes</h2>
+            </header>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -428,7 +446,7 @@
         </div>
     </footer>
 
-    <a id="buttonWhatsapp" class="show" target="_blank" href="">
+    <a id="buttonWhatsapp" class="show" target="_blank" href="https://wa.link/g1ue82">
 
         <img src="./assets/whatsapp logo.webp" alt="">
 

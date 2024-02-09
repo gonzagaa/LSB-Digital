@@ -30,8 +30,8 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
-ScrollReveal().reveal('#home h1, #clientes .logos', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
-ScrollReveal().reveal('#home img, #services .card, #more h3, #more h2, #more a, #time h2, #time span, #time h2, #time span, #time-mobile h2, #time-mobile span, #contact header, #contact input, #contact form', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home h1', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home img, #services .card, #more h3, #more h2, #more a, #time h2, #time span, #time h2, #time span, #time-mobile h2, #time-mobile span, #contact header, #contact input, #contact form, #clientes .logos', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#services .left', { distance: '400px', origin: 'left', desktop: false ,duration: 500, easing: 'ease-in-out'});
 ScrollReveal().reveal('#services .right', { distance: '400px', origin: 'right', desktop: false ,duration: 500, easing: 'ease-in-out'});
