@@ -114,6 +114,10 @@ nav {
     border: none;
     cursor: pointer;
   }
+
+  nav button:hover {
+    background: transparent;
+  }
   
   nav .menu,
   nav .close-menu {
@@ -263,9 +267,14 @@ nav {
     stroke: var(--color-text);
   }
 
-  /* RESPONSIVE =================== */
+/* RESPONSIVE =================== */
+@media (min-width: 768px) {
+  .wrapper {
+    width: min(76rem, 100%);
+  }
+}
 
-@media (min-width: 1300px) {
+@media (min-width: 1080px) {
     /* reset =================== */
       nav#navigation .wrapper * {
         margin: 0;
@@ -332,12 +341,10 @@ nav {
   
       nav#navigation .menu a button:hover {
         color: #000;
-        outline: 2px solid var(--primary-color);
         font-weight: 700;
-
         border-radius: 0 2rem;
-        box-shadow:  17px 17px 50px #94f1084d,
-             -17px -17px 50px #9ae9234a;
+        box-shadow:  17px 17px 50px #94f10831,
+             -17px -17px 50px #9ae92328;
       }
 
       nav#navigation.scroll .menu a button {

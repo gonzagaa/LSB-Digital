@@ -60,6 +60,10 @@ html {
   position: relative;
 }
 
+#home .div-blur {
+  display: none;
+}
+
 #home img.blur {
   position: absolute;
   top: -35rem;
@@ -810,6 +814,28 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
   header#home {
     height: initial;
+    position: relative;
+  }
+
+  header#home .div-blur {
+    display: initial;
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(#3ff511, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    left: -60rem;
+    bottom: -40rem;
+    opacity: .2;
+
+    animation: moveblush infinite 4s linear;
+  }
+
+  @keyframes moveblush {
+    50% {
+      opacity: 0;
+    }
   }
 
   header#home img.blur {
@@ -825,7 +851,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1080px) {
   .wrapper {
     width: min(112rem, 100%);
   }
