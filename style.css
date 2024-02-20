@@ -61,21 +61,22 @@ html {
 }
 
 #home .div-blur {
-  display: none;
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(#3ff511, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    top: -65rem;
+    left: -30rem;
+    opacity: .2;
+
+    animation: moveblush infinite 4s linear;
 }
 
-#home img.blur {
-  position: absolute;
-  top: -35rem;
-  right: 0;
-  opacity: .5;
-
-  animation: moveBlur infinite ease-in-out 10s;
-}
-
-@keyframes moveBlur {
+@keyframes moveblush {
   50% {
-    transform: translateX(60%);
+    opacity: 0;
   }
 }
 
@@ -329,13 +330,6 @@ background: linear-gradient(to bottom right, #86D907 14%, #95F108 37%);
   position: relative;
 }
 
-#more .blur {
-  position: absolute;
-  left: -30rem;
-  top: 50%;
-  opacity: .1;
-}
-
 #more .content {
   display: flex;
   flex-direction: column;
@@ -585,7 +579,7 @@ background-size: cover;
 #time-mobile h3 {
   margin-top: 1rem;
   margin-bottom: .5rem;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 
   color: var(--primary-color);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
@@ -593,14 +587,20 @@ background-size: cover;
 }
 
 #time-mobile span {
+  font-size: 1.4rem;
+}
+
+#time-mobile p,
+#time-mobile span {
   color: #d8d8d8;
   font-weight: 500;
 }
 
 #time-mobile img {
+  width: 15rem;
   border-radius: 50%;
-
-  box-shadow: 5px 5px 10px #000000c7;
+  box-shadow: 5px 5px 10px #66666648,
+                -5px -5px 10px #0000007c;
 }
 
 #time-mobile .swiper-button-prev,
@@ -616,16 +616,6 @@ background-size: cover;
   font-weight: 800;
 
   margin-bottom: 1rem;
-}
-
-#time-mobile h3 {
-  font-size: 2rem;
-}
-
-#time-mobile span {
-  color: #d8d8d8;
-  font-weight: 500;
-  text-transform: lowercase;
 }
 
 #time-mobile .swiper {
@@ -817,31 +807,6 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     position: relative;
   }
 
-  header#home .div-blur {
-    display: initial;
-    width: 1000px;
-    height: 1000px;
-    background: radial-gradient(#3ff511, transparent 50%);
-    border-radius: 50%;
-    position: absolute;
-    z-index: 10;
-    left: -60rem;
-    bottom: -40rem;
-    opacity: .2;
-
-    animation: moveblush infinite 4s linear;
-  }
-
-  @keyframes moveblush {
-    50% {
-      opacity: 0;
-    }
-  }
-
-  header#home img.blur {
-    display: none;
-  }
-
   header#home .banner .left h1 {
     font-size: 4rem;
   }
@@ -869,6 +834,17 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
   header#home .banner video {
     display: initial;
+  }
+
+  header#home .banner .content {
+    z-index: 11;
+  }
+
+  header#home .div-blur {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(#ffffff, transparent 50%);
   }
 
   header#home .custom-shape-divider-bottom-1704479639 { 
@@ -928,6 +904,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
 
   section#time img {
+    width: 20rem;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-bottom: 2rem;
   }
